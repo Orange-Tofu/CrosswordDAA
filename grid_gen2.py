@@ -37,6 +37,7 @@ def main():
     # To get words from a file
     # file = open(r"words.txt", "r")
     # sentence = file.read()
+    # file.close()
     # word_list = sentence.split()
 
     word_list = ["HELLO","FIRE","NOOB","PLANETS","EARTH","MARS","VENUS"]
