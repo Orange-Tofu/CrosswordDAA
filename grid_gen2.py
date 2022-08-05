@@ -2,8 +2,8 @@ import string
 import random
 
 #Creating 15x15 grid with '-' as the placeholders
-width = 15
-height = 15
+width = 10
+height = 10
 grid = [['-' for i in range(0, width)] for j in range(0, height)]
 
 def generator(word_list):
@@ -39,7 +39,7 @@ def main():
     # sentence = file.read()
     # word_list = sentence.split()
 
-    word_list = ["HELLO","FIRE","NOOB","PLANETS","EARTH","MARS","VENUS","JUPYTER","SATURN","MERCURY"]
+    word_list = ["HELLO","FIRE","NOOB","PLANETS","EARTH","MARS","VENUS"]
     word_list.sort()
 
     for i in range(0, len(word_list)):
@@ -54,5 +54,6 @@ def main():
                 grid[i][j] = random.choice(string.ascii_uppercase)      #Filing the empty spots with characters
 
     print("\n".join(map(lambda row: " ". join(row), grid)))
+    #print("],\n[".join(map(lambda row: '","'. join(row), grid)))
 
 main()    
