@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header h2{
+    font-family: 'Kaushan Script', cursive;
+}
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header ul li{
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+header ul li a:hover{
+    background-color: linear-gradient(#05915b, #f4f4f4);
+    color:#33ffa0;
+}
+header ul li:nth-child(1){
+    border-top: 4px solid #05915b;
+}
+main{
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main p{
+    width: 477px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Carter One', cursive;
+    background-color: #286243e7;
+    color: white;
+    border-radius: 20px;
+}
+main button{
+    width: 217px;
+    height: 58px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    margin-top: 15px;
+    font-size: 30px;
+    font-family: 'Bangers', cursive;
+    color: #0d3e05;
+    background-image: linear-gradient(#055c2e, #f4f4f4);
+    cursor: pointer;;
+}
+main button:hover{
+    transform: translateY(5px);
+    transition: 0.2s;
+}
