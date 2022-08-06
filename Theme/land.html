@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="land.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <a href="land.html"><img src="logo.webp" alt="logo.img"></a>
+        <h2>Peek-a-Boo</h2>
+    </header>
+    <main>
+        <!-- Choose Theme: <input type="text" id="cctextboxid" name="cctextbox"><br/> -->
+        Themes: <select name="themes" id="themes">
+            <option value="planet">Planets</option>
+            <option value="animal">Animals</option>
+            <option value="movie">Movies</option>
+          </select><br/>
+          <input type="button" name="submit" value="Click to choose theme" onclick="zap()" />
+        </form>
+        <div id="left">
+            <p>Welcome to </p>
+            <p>the</p>
+            <p>Kingdom of Words</p>
+        <button onclick="window.location='Main.html';">Play Now</button>
+        </div>
+        <div id="right">
+            <h3>Rule book</h3>
+            <ul>
+                <li>Locate the words from the given list in grid of characters.</li>
+                <li>Word may be in any of the eight directions:left-right, right-left, up-down, down-up,diagonal-right, diagonal-left. </li>
+                <li>Click and drag cursor from one end to the the of the word.</li>
+                <li>Found words are striked out from list.</li>
+                <li>......!!!</b>GAMEON</b>!!!......</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="WordSearch.js"></script>
+    <script>
+        function zap(){
+        var textValue = document.getElementById("themes").value;
+        console.log(textValue);
+
+        sessionStorage.setItem("thememe", textValue);
+        let storage = sessionStorage.getItem("thememe");
+        console.log(storage);
+        // location.reload();
+      }
+    </script>
+    
+    
+</body>
+
+</html>

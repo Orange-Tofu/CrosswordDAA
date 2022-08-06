@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: url('bgr3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header h2{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    margin-left: 10px;
+}
+header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+header img{
+    width: 40px;
+    height: 40px;
+    margin-left: 60px;
+    border-radius: 50%;
+}
+header img:hover{
+    cursor: pointer;
+}
+main{
+    height: calc(100vh - 60px);
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: row;
+}
+#left{
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 200px;
+    margin-left: 50px;
+    animation: left 5s infinite;    
+}
+
+#left p{
+    margin: 10px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Berkshire Swash', cursive;
+    color: rgb(113, 211, 253);
+}
+@keyframes left {
+    50% {text-shadow: 10px 20px 30px rgb(255, 255, 255);}
+  }
+#left button{
+    width: 217px;
+    height: 58px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    margin-top: 15px;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+    color: #ffffff;
+    background-image: linear-gradient(rgb(127, 0, 190) , #0ba4ce);
+    cursor: pointer;;
+}
+#left button:hover{
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+#rigth{
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 200px;
+}
+#right h3{
+    line-height: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Carter One', cursive;
+    color: white;
+    border-radius: 20px;
+}
+#right ul{
+    
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+    color: rgb(255, 255, 255);
+    background: #c1780a6d;
+    border: solid rgb(205, 141, 4) 5px;
+    border-radius: 30px;
+    padding: 20px;
+    height: 400px;
+    width: 350px;
+    animation: right 5s infinite;
+
+}
+@keyframes right {
+    50% {outline: 7px solid rgb(141, 88, 3);}
+  }
+#right li {
+    /* background: #ee8c0dbe; */
+    padding: 10px;
+    border-radius: 30px;
+    text-align: justify;
+  }
+
+
+
