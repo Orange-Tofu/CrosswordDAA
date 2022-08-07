@@ -112,8 +112,8 @@ header img:hover{
 }
 
 .ws-found {
-   background: linear-gradient(rgb(144, 0, 255), rgb(184, 79, 158)); 
-  /*background: rgb(185, 18, 160);*/
+/*    background: linear-gradient(rgb(144, 0, 255), rgb(184, 79, 158));  */
+  background: rgb(185, 18, 160);
 }
 
 .ws-game-over-outer {
