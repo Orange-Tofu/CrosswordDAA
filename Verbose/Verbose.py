@@ -86,7 +86,8 @@ def display():
 
 if __name__ == '__main__':
     pretty.install()
-    _ = call('clear' if os.name == 'posix' else 'cls')
+    #_ = call('clear' if os.name == 'posix' else 'cls')
+    console.clear()
     ascii_banner = pyfiglet.figlet_format("WordSearchSolver", font='slant', width=110)
     termcolor.cprint(ascii_banner, 'cyan')
     console.print("[magenta underline]Made by:[/magenta underline] Janesh    Akash    Ayushi    Anujna",
